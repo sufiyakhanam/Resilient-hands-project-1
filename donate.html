@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Sri Sairam Old Age Home</title>
+    <meta name="description" content="Make a donation to support our elders and give them peace in their final years.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: var(--white);">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                </svg>
+                <span>Sri<br>Sairam</span>
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donate.html" class="active">Donation</a></li>
+                <li><a href="elders.html">Elders</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-teal nav-btn">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div style="padding: 150px 0 80px; text-align: center; background: url('https://images.unsplash.com/photo-1544027993-37db38df8b42?q=80&w=1470&auto=format&fit=crop') center/cover no-repeat; position: relative;">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(rgba(0,0,0,0.5), rgba(138, 63, 18, 0.8));"></div>
+        <div class="container fade-in" style="position: relative; z-index: 2; color: white;">
+            <h1 class="section-title" style="color: white;">Make a Difference Today</h1>
+            <p class="section-subtitle" style="color: #f0f0f0;">Your contribution brings healthcare, comfort, and peace to our resident elders.</p>
+        </div>
+    </div>
+
+    <!-- Donation Section -->
+    <section class="section" style="background-color: var(--hero-bg);">
+        <div class="container fade-in">
+            <div class="donate-form-wrapper">
+                <h2 style="text-align: center; color: var(--primary-brown); margin-bottom: 30px;">Choose Donation Amount</h2>
+                
+                <div class="amount-options">
+                    <button class="amount-btn" data-amount="500">₹500</button>
+                    <button class="amount-btn active" data-amount="1500">₹1500</button>
+                    <button class="amount-btn" data-amount="3000">₹3000</button>
+                    <button class="amount-btn" data-amount="5000">₹5000</button>
+                </div>
+
+                <form id="donationForm" onSubmit="event.preventDefault(); alert('Thank you for your generous donation!');">
+                    <div class="form-group">
+                        <label for="customAmount">Enter the amount you wish to donate(₹)</label>
+                        <input type="number" id="customAmount" class="form-control" value="1500" min="1" required>
+                    </div>
+
+                    <div style="display: flex; gap: 20px;">
+                        <div class="form-group" style="flex: 1;">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" class="form-control" placeholder="Arun" required>
+                        </div>
+                        <div class="form-group" style="flex: 1;">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" class="form-control" placeholder="Kumar" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Phone">Phone Number</label>
+<input type="number" id="Phone" class="form-control" placeholder="1234567890" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Optional Message</label>
+                        <textarea id="message" class="form-control" rows="4" placeholder="Send a message to our elders..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-orange" style="width: 100%; font-size: 1.1rem; padding: 18px; margin-top: 20px;">
+                        Donate Internally <i class="fas fa-heart" style="margin-left: 8px;"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-section">
+                    <div class="footer-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="footer-text">
+                        <h4>Contact Info</h4>
+                        <p>+91 10722235 5008</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="footer-text">
+                        <h4>Registration</h4>
+                        <p>NGO Reg. No: 12345</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-text">
+                        <h4 style="margin-bottom: 10px;">Site links</h4>
+                        <div class="footer-links">
+                            <a href="index.html">Home</a>
+                            <a href="donate.html">Donations</a>
+                            <a href="contact.html">Volunteer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sri Sairam Old Age Home. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

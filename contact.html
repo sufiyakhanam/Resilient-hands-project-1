@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sri Sairam Old Age Home</title>
+    <meta name="description" content="Get in touch with Sri Sairam Old Age Home to learn more about our work or volunteer.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                </svg>
+                <span>Sri<br>Sairam</span>
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donate.html">Donation</a></li>
+                <li><a href="elders.html">Elders</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-teal nav-btn">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div style="padding: 150px 0 80px; background: var(--bg-cream); text-align: center;">
+        <div class="container fade-in">
+            <h1 class="section-title">Get In Touch</h1>
+            <p class="section-subtitle">We would love to hear from you. Visit us, volunteer, or support our elders.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="section" style="padding-top: 20px;">
+        <div class="container fade-in">
+            <div class="contact-container">
+                <!-- Info -->
+                <div class="contact-info-box">
+                    <h3 style="font-size: 2rem; margin-bottom: 30px; font-family: 'Outfit';">Contact Information</h3>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Our Location</h4>
+                            <p style="color: rgba(255,255,255,0.8);">123 Hope Street, Anna Nagar<br>Chennai, Tamil Nadu 600040</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Phone Number</h4>
+                            <p style="color: rgba(255,255,255,0.8);">+91 10722235 5008</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Email Address</h4>
+                            <p style="color: rgba(255,255,255,0.8);">hello@srisairamoldcare.org</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 50px;">
+                        <h4 style="margin-bottom: 15px;">Follow Us</h4>
+                        <div style="display: flex; gap: 15px;">
+                            <a href="#" style="background: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" style="background: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;"><i class="fab fa-twitter"></i></a>
+                            <a href="#" style="background: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div style="background: var(--white); padding: 40px; border-radius: var(--border-radius); box-shadow: var(--shadow-sm);">
+                    <h3 style="font-size: 2rem; margin-bottom: 30px; font-family: 'Outfit'; color: var(--primary-brown);">Send a Message</h3>
+                    <form onSubmit="event.preventDefault(); alert('Message Sent Successfully!');">
+                        <div style="display: flex; gap: 20px;">
+                            <div class="form-group" style="flex: 1;">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-control" required placeholder="Arun Kumar">
+                            </div>
+                            <div class="form-group" style="flex: 1;">
+                                <label for="contactEmail">Your Email</label>
+                                <input type="email" id="contactEmail" class="form-control" required placeholder="arun@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Mobile Number</label>
+                            <input type="tel" id="contactPhone" class="form-control" placeholder="+91 9876543210" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required placeholder="How can I help or volunteer?">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" class="form-control" rows="5" required placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-teal">Send Message</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-section">
+                    <div class="footer-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="footer-text">
+                        <h4>Contact Info</h4>
+                        <p>+91 10722235 5008</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="footer-text">
+                        <h4>Registration</h4>
+                        <p>NGO Reg. No: 12345</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-text">
+                        <h4 style="margin-bottom: 10px;">Site links</h4>
+                        <div class="footer-links">
+                            <a href="index.html">Home</a>
+                            <a href="donate.html">Donations</a>
+                            <a href="contact.html">Volunteer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sri Sairam Old Age Home. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
